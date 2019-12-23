@@ -1,0 +1,33 @@
+@import '../styles/variables/themes/dark-color-theme.less';
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: @header-background-color;
+    opacity: 1;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    text-align: center;
+    li {
+        float: none;
+        display: inline-block;
+
+        a {
+            display: block;
+            color: @header-font-color;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+          a:hover:not(.active) {
+            background-color: #111;
+          }
+    }
+  }
+  
+  .active {
+    background-color: @header-help-link-color;
+  }
